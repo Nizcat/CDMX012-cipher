@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
   <title>Caesar Cipher</title>
   <link rel="stylesheet" href="style.css" />
-  <nav><a href="">Inicio</a><a href="">Algoritmo</a><a href="">Cifrado Caesar</a></nav> 
-  <h1 class="title1">Caesar Cipher</h1>
+  <nav><a href="http://localhost:3000/">Inicio</a><a href="#algorithm">Algoritmo</a><a
+      href="https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar">Wiki Cifrado Caesar</a></nav>
+  <h1 class="title1">Caesar Code</h1>
 </head>
-
 <body>
   <script src="index.js" type="module"></script>
-  <div id="root"></div>
-  <section class="boxes" id="boxes">
+  
+  <section name="interfaz de cifrado para usuario" class="boxes" id="boxes">
     <div class="box1">
       <input class="beforeCode" type="text" id="text" required placeholder="Ingresa tu texto aquí.">
       <button id="code">Cifrar</button>
       <div class="offsetButton">
-        <p class="textoOffset">Número codificador</p>
+        <div class="textoOffset">Número codificador</div>
         <input class="offset" type="number" name="cifrador" id="offset" min="1" max="99" placeholder="1 a 99"
           required />
       </div>
@@ -30,7 +29,7 @@
       <input class="beforeCode" type="text" id="text2" required placeholder="Ingresa tu texto aquí.">
       <button id="decode">Descifrar</button>
       <div class="offsetButton">
-        <p class="textoOffset">Número decodificador</p>
+        <div class="textoOffset">Número decodificador</div>
         <input class="offset" type="number" name="cifrador" id="offset2" min="1" max="99" placeholder="1 a 99"
           required />
       </div>
@@ -38,11 +37,51 @@
       <button id="copyPaste2">Copiar texto</button>
     </div>
   </section>
-  <section>
+  <section id="algorithm" class="algoritmo">
     <img class="CaesarsCode" src="https://imgs.developpaper.com/imgs/3200783407-5c66b17488eb4_articlex.png"
       alt="Cifrado Cesar">
-
+    <p>He encontrado varias fórmulas para desarrollar el Cifrado Cesar, la formula que se usó en esta aplicación para
+      asignarle un valor ascii a cada letra y que sólo recorriendo un rango de letras regrese el valor adecuado, es:</p>
+    <div class="formulas">
+      <div class="codeFormula">
+        <ol>
+          <li>Fórmula para cifrar</li>
+          <li>Variantes:</li>
+          <li>rango (a...b)</li>
+          <li>x=valor ascii asignado a una letra</li>
+          <li>y=número que recorreremos</li>
+          <li>r= residuo</li>
+          <li>c= cociente</li>
+          <li>s=suma</li>
+          <li>Formula:</li>
+          <li>paso1:</li>
+          <li>s=x-a+y</li>
+          <li>paso2:</li>
+          <li>c= s/26</li>
+          <li>r=c-s/26</li>
+          <li>número cifrado =r+a</li>
+        </ol>
+      </div>
+      <div class="decodeFormula">
+        <ol>
+          <li>Fórmula para descifrar</li>
+          <li>Variantes:</li>
+          <li>rango (a...b)</li>
+          <li>x=valor ascii asignado a una letra</li>
+          <li>y=número que recorreremos</li>
+          <li>r= residuo</li>
+          <li>c= cociente</li>
+          <li>s=suma</li>
+          <li>Formula:</li>
+          <li>paso1:</li>
+          <li>s=x-b-y</li>
+          <li>paso2:</li>
+          <li>c= s/26</li>
+          <li>r=c-s/26</li>
+          <li>número cifrado =r-b</li>
+        </ol>
+      </div>
+    </div>
   </section>
 </body>
-
 </html>

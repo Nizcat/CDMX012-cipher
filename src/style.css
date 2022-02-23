@@ -1,103 +1,127 @@
-
-nav{
+nav {
   width: 85%;
   display: flex;
   justify-content: space-between;
   margin-left: 2em;
   margin-top: -1em;
-  }
-a{
+}
+a {
   margin-top: -1em;
   font-size: 15px;
   color: #F2E9E4;
 }
 a:hover {
-color: white;
-font-size: 1.5em;
+  color: white;
+  font-size: 1.5em;
 }
-.title1{
-  
+.title1 {
+
   margin-left: 2em;
 }
 body {
-    margin-top: 2em;
-    background-color: #22223B;
-    color: #F2E9E4;
-    font-family: 'PT Sans Narrow', sans-serif;
-    font-size: 20px;
-    width: 100%;
-  }
-  .boxes{
+  margin-top: 2em;
+  background-color: #22223B;
+  color: #F2E9E4;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 20px;
+  width: 100%;
+}
+.boxes {
   display: flex;
   justify-content: space-between;
-  }
-  .box1 {
-    width:fit-content;
-    height: 50%;
-    display: block;
-    margin: auto ;
-    margin-top: 2em;
-    padding: 2%;
-    border: bisque;
-    border-width: .35em;
-    border-color: aliceblue;
-    border-style:groove;
-    box-shadow: 8px 5px 5px rgb(83, 83, 83);
-    
-  }
-  .box2 {
-    width:fit-content;
-    height: 50%;
-    display: block;
-    margin: auto ;
-    margin-top: 2em;
-    padding: 2%;
-    border: bisque;
-    border-width: .35em;
-    border-color: aliceblue;
-    border-style:groove;
-    box-shadow: 8px 5px 5px rgb(83, 83, 83);
-    
-  }
-  .offset, .offset2{
-    display: block;
-    margin: auto ;
-    margin-top: .5em;
-    width: auto;
-  }
-   button{
-   display: block;
-   margin: auto;
-   margin-top: .7em;
-   width: auto;
-   }
-  .coded{
-   width: 18em;
-   height: 4em;
-   display: block;
-   margin: auto ;
-   margin-top: .7em;
-  }
-  .beforeCode{
-    width: 18em;
-    height: 4em;
-    display: block;
-    margin: auto ;
-    margin-top: .7em;
-  }
-   .offsetButton{
-    display: flex;
-    align-items: center;
-    font-family: 'PT Sans Narrow', sans-serif;
-    font-size: 12px;
-  }
-   .textoOffset{
-    margin-right:-7em;
-  }
-  img{
-    display: flex;
-    flex-direction: row;
-    margin-top: 2em;
-    border: 2em;
-    border-color: bisque;
+}
+.box2, 
+.box1 {
+  width: 27%;
+  height: 50%;
+  display: block;
+  margin: auto;
+  margin-top: 2em;
+  padding: 2%;
+  border: bisque;
+  border-width: .35em;
+  border-color: aliceblue;
+  border-style: groove;
+  box-shadow: 8px 5px 5px rgb(83, 83, 83);
+}
+.offset,
+.offset2 {
+  display: block;
+  margin: auto;
+  margin-top: .5em;
+  width: auto;
+}
+button {
+  display: block;
+  margin: auto;
+  margin-top: .7em;
+  width: auto;
+  height: 3em;
+  border-radius: 35%;
+  border: none;
+}
+button:hover {
+  background-color: grey;
+  color: white;
+}
+.coded,
+.beforeCode {
+  width: 17em;
+  height: 4em;
+  display: block;
+  margin: auto;
+  margin-top: .7em;
+}
+.offsetButton {
+  display: flex;
+  align-items: center;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 12px;
+}
+.textoOffset {
+  margin-right: -7em;
+}
+.algoritmo {
+  width: fit-content;
+  display: block;
+  margin: auto;
+  height: auto;
+}
+p {
+  width: 70%;
+  margin: auto;
+  margin-top: 2.5em;
+}
+.formulas{
+  margin-top: 2.5em;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.codeFormula{
+  display: block;
+  margin: auto;
+  border-style: solid;
+  border-color: rgb(110, 112, 110);
+  border-width: .2em;
+  padding: 1%;
+  transform: skewX(10deg);
+}
+.decodeFormula{
+  display: block;
+  margin: auto;
+  border-style: solid;
+  border-color: rgb(110, 112, 110);
+  border-width: .2em;
+  padding: 1%;
+  transform: skewX(-10deg);
+}
+ol{
+  list-style-type: none;
+  text-align: center;
+}
+img {
+  display: block;
+  margin: auto;
+  margin-top: 2em;
   }
