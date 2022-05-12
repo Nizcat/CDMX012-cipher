@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
   <title>Caesar Cipher</title>
   <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
   <nav><a href="http://localhost:3000/">Inicio</a><a href="#algorithm">Algoritmo</a><a
       href="https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar">Wiki Cifrado Caesar</a></nav>
   <h1 class="title1">Caesar Code</h1>
-</head>
-<body>
   <script src="index.js" type="module"></script>
-  
+
   <section name="interfaz de cifrado para usuario" class="boxes" id="boxes">
     <div class="box1">
       <input class="beforeCode" type="text" id="text" required placeholder="Ingresa tu texto aquí.">
-      <button id="code">Cifrar</button>
+      <button id="code">Cifrar</button> <button id="decode">Descifrar</button>
       <div class="offsetButton">
         <div class="textoOffset">Número codificador</div>
         <input class="offset" type="number" name="cifrador" id="offset" min="1" max="99" placeholder="1 a 99"
@@ -24,10 +26,10 @@
       </div>
       <input type="text" id="codedText" class="coded">
       <button id="copyPaste">Copiar texto</button>
-    </div>
-    <div class="box2">
+   <!--  </div>
+     <div class="box2">
       <input class="beforeCode" type="text" id="text2" required placeholder="Ingresa tu texto aquí.">
-      <button id="decode">Descifrar</button>
+      
       <div class="offsetButton">
         <div class="textoOffset">Número decodificador</div>
         <input class="offset" type="number" name="cifrador" id="offset2" min="1" max="99" placeholder="1 a 99"
@@ -35,7 +37,7 @@
       </div>
       <input type="text" id="decoded" class="coded">
       <button id="copyPaste2">Copiar texto</button>
-    </div>
+    </div>  -->
   </section>
   <section id="algorithm" class="algoritmo">
     <img class="CaesarsCode" src="https://imgs.developpaper.com/imgs/3200783407-5c66b17488eb4_articlex.png"
@@ -84,4 +86,5 @@
     </div>
   </section>
 </body>
+
 </html>

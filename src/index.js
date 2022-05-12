@@ -5,9 +5,9 @@ import cipher from './cipher.js';
  document.getElementById("codedText").value= cipher.encode(offset, texto);
  })
  document.getElementById("decode").addEventListener("click", function decode() { 
- let texto2 =document.getElementById("text2").value;
- let offset2=parseInt(document.getElementById("offset2").value);
- document.getElementById("decoded").value= cipher.decode(offset2, texto2);
+ let texto =document.getElementById("text").value;
+ let offset=parseInt(document.getElementById("offset").value);
+ document.getElementById("codedText").value= cipher.decode(offset, texto);
 })
 document.getElementById("copyPaste").addEventListener("click", function copy(){ 
  let copyText = document.getElementById("codedText");
